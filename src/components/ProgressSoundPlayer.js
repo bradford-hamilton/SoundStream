@@ -7,8 +7,13 @@ export default class ProgressSoundPlayer extends Component {
     const { resolveUrl, clientId } = this.props;
     return (
       <SoundCloudContainer resolveUrl={ resolveUrl } clientId={ clientId }>
-        <Track>
+        <Track/>
       </SoundCloudContainer>
     );
   }
+}
+
+ProgressSoundPlayer.propTypes = {
+  resolveUrl: PropTypes.string.isRequired,
+  clientId: PropTypes.string.isRequired
 }

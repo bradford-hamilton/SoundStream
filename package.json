@@ -4,8 +4,8 @@
   "description": "Native Sound Cloud Streaming App",
   "main": "main.js",
   "scripts": {
-  "compile": "browserify -t [ babelify --presets [ react es2015 ] ] src/app.js -o js/app.js",
-  "start": "electron main.js"
+    "compile": "browserify -t [ babelify --presets [ react es2015 ] ] src/app.js -o js/app.js",
+    "start": "electron main.js"
   },
   "devDependencies": {
     "electron-prebuilt": "^1.2.0",
@@ -15,6 +15,7 @@
     "browserify": "^13.0.1"
   },
   "dependencies": {
+    "dotenv": "^2.0.0",
     "node-soundcloud": "0.0.5",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",

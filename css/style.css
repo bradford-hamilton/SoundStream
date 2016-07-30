@@ -23,6 +23,45 @@
 	top:1px;
 }
 
+h1 {
+  font-family: sans-serif;
+}
+
+h2 {
+}
+
 .center {
   text-align: center;
+}
+
+.player {
+
+}
+
+.orange-button {
+
+}
+
+.timer {
+
+}
+
+.track-info {
+
+}
+
+.track-title {
+
+}
+
+.track-user {
+
+}
+
+.progress-container {
+
+}
+
+.progress {
+
 }

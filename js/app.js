@@ -28002,7 +28002,7 @@ var Main = function (_Component) {
         isLoading: true
       });
 
-      _nodeSoundcloud2.default.get('./tracks', {
+      _nodeSoundcloud2.default.get('/tracks', {
         q: this.state.query,
         embeddable_by: 'all'
       }, function (err, tracks) {
@@ -28024,12 +28024,12 @@ var Main = function (_Component) {
         _react2.default.createElement(
           'h1',
           null,
-          'SoundStream Sound Cloud Music Player'
+          'Electron SoundCloud Player'
         ),
         _react2.default.createElement('input', { type: 'search',
           onKeyUp: this.handleTextChange.bind(this),
           className: 'search-field',
-          placeholder: 'Enter song name or artist..' }),
+          placeholder: 'Enter song name or artist...' }),
         _react2.default.createElement(
           'button',
           { className: 'search-button',
@@ -28119,7 +28119,7 @@ var ProgressSoundPlayer = function (_Component) {
       var clientId = _props.clientId;
 
       return _react2.default.createElement(
-        _addons.SoundCloudContainer,
+        _addons.SoundPlayerContainer,
         { resolveUrl: resolveUrl, clientId: clientId },
         _react2.default.createElement(_Track2.default, null)
       );
@@ -28181,6 +28181,7 @@ var Track = function (_Component) {
       var duration = _props.duration;
 
       var currentProgress = currentTime / duration * 100 || 0;
+
       return _react2.default.createElement(
         'div',
         { className: 'player' },
